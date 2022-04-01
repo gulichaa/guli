@@ -1,0 +1,25 @@
+$color-pink:#F16D7F;
+$weihgt-4:400;
+$weight-2:$weihgt-4 / 2;
+
+@mixin flexstart{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+@mixin flexcolumn{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+@mixin fljustifybetween{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+@mixin fljustifycenter{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
