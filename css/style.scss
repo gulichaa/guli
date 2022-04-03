@@ -34,7 +34,11 @@
 .logo img {
     margin-right: 8px; 
 }
+.logo img:hover{
+    transform: rotate(70deg);
+    transition-duration: 2s;
 
+}
 .menu-svg {
     margin-left: 33px;
     text-decoration: none;
@@ -47,9 +51,11 @@
     border: none;
 }
 
+
+
 .menu-svg svg {
     fill: #fff;
-    
+    transition: fill 0.4s;
 }
 
 .menu-svg svg:hover {
@@ -156,8 +162,6 @@
 
 }
 
-.product-title-catalog {}
-
 .product-item {
     width: 360px;
     background: #F8F8F8;
@@ -205,7 +209,7 @@
     text-decoration: none;
     border: 1px solid #FF6A6A;
     text-align: center;
-
+    transition:background-color 0.6s ;
 }
 
 .all-product .fa-caret-right {
@@ -215,6 +219,7 @@
 .all-product:hover {
     color: #fff;
     background-color: $color-pink;
+    
 }
 
 .copyright {
@@ -318,6 +323,11 @@
     line-height: 17px;
     color: #222224;
     opacity: 0.67;
+    &:hover {
+        background-color:#d6d5d5;
+        outline: none;
+    }
+    
 }
 
 .btn-form {
@@ -328,11 +338,57 @@
     font-size: 14px;
     line-height: 17px;
     color: #fff;
+    transition:0.4s ;
+    &:hover{
+        background-color:$hoverpink;
+    }
 }
 
 
 /*block footer*/
-@import 'blocks/footer';
+.footer {
+    padding: 30px 0px;
+    background: #222224;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FBFBFB;
+
+}
+
+.footer-container {
+    @include fljustifybetween;
+}
+
+.btn {
+    padding: 9px;
+    background-color: #fff;
+}
+
+.sotset {
+    @include fljustifycenter;
+    gap: 7px;
+}
+
+.sotset-btn {
+    width: 32px;
+    height: 32px;
+    color: #000;
+    background-color: #fff;
+    @include fljustifycenter;
+    text-decoration: none;
+    font-size: 16px;
+    transition-property: background-color;
+    transition-duration: 1s;
+    
+    &:hover {
+        background-color: $color-pink;
+        color: #fff;
+        transform: translateY(-5px);
+        transition: 1s;
+    }                               
+    
+}
+
 
 
 
@@ -478,7 +534,8 @@
     width: 652px;
     box-shadow: 10px 6px 12px #E5E5E5;
 
-    @include flexstart .icon-x {
+    @include flexstart ;
+    .icon-x {
         margin-top: 28px;
     }
 
@@ -528,7 +585,12 @@
 .btn-my-product {
     border: none;
     padding: 16px 40px;
-
+    transition: 0.4s;
+}
+.btn-my-product:hover{
+    background-color: #fff;
+    color: $color-pink;
+    outline:1px solid $color-pink;
 }
 
 .form-list {
@@ -554,6 +616,7 @@
         font-size: 13px;
         line-height: 16px;
         color: #222222;
+        outline: none;
 
     }
 
@@ -567,6 +630,12 @@
         font-size: 11px;
         line-height: 13px;
         color: #4A4A4A;
+        transition: 0.4s;
+    }
+    .btn-quote:hover {
+        background-color: #fff;
+        color: $color-pink;
+        outline: 1px solid $color-pink;
     }
 }
 
@@ -614,5 +683,8 @@
         line-height: 19px;
         font-family: 'Lato';
         font-weight: 300;
+    }
+    .btn-card:hover{
+        background-color:$hoverpink;
     }
 }
