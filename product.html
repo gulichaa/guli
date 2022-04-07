@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/b2fe71f6e9.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
-    <title>Catalog</title>
+    <title>Product</title>
 </head>
 
 <body>
@@ -84,13 +84,46 @@
         architectures before cutting-edge services. Completely visualize parallel core competencies rather than exceptional
         portals.</p>
         <p class="price-product color__span">$300</p>
-        <hr width="641px">
+        <hr class="hr-641">
         <div class="choose">
             <div class="product-menu choose-menu">
-                <button class="product-btn">CHOOSE COLOR<img class="product-menu-down" src="img/down.png" alt="down.">
-                </button>
-                <button class="product-btn">CHOOSE SIZE<img class="product-menu-down" src="img/down.png" alt="down."></button>
-                <button class="product-btn">QUANTITY<img class="product-menu-down" src="img/down.png" alt="down."></button>
+                <div class="product-btn choose-pr-btn">
+                    <details class="size-detail">
+                        <summary class="size-summary">Choose color<img class="product-menu-down" src="img/down.png" alt="down."></summary>
+                        <ul class="list-size">
+                            <li><input type="color"><span class="checkbox-text"> color</span></li>
+
+                    
+                        </ul>
+                    
+                    </details>
+                </div>
+                <div class="product-btn  choose-pr-btn">
+                    <details class="size-detail">
+                        <summary class="size-summary">Choose size<img class="product-menu-down" src="img/down.png" alt="down.">
+                        </summary>
+                        <ul class="list-size">
+                            <li><input type="checkbox"><span class="checkbox-text">xs</span></li>
+                            <li><input type="checkbox"><span class="checkbox-text">s</span></li>
+                            <li><input type="checkbox"><span class="checkbox-text">m</span></li>
+                            <li><input type="checkbox"><span class="checkbox-text">l</span></li>
+                
+                        </ul>
+                
+                    </details>
+                </div>
+                <div class="product-btn choose-pr-btn">
+                    <details class="size-detail">
+                        <summary class="size-summary">quantity<img class="product-menu-down" src="img/down.png" alt="down.">
+                        </summary>
+                        <ul class="list-size">
+                            <li><input type="number" placeholder="0"><span class="checkbox-text"></span></li>
+                           
+                
+                        </ul>
+                
+                    </details>
+                </div>
             </div>
         </div>
         <button class="add-to-cart">

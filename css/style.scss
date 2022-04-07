@@ -276,8 +276,8 @@
     display: block;
     padding: 15px;
     border-left: 5px solid $color-pink;
-    border-bottom: 1px solid grey;
-    color: grey;
+    border-bottom: 1px solid #EBEBEB;
+    color: #6F6E6E;
     text-transform: uppercase;
 }
 
@@ -306,23 +306,27 @@
 }
 
 
-
+.product-menu {
+    display: flex;
+    gap:80px;
+}
 
 .size-detail {
     position: absolute;
     box-sizing: border-box;
-    margin-top: -28px;
-    margin-left: -35px;
+    
+  
 }
 .size-summary{
     display: block;
     padding: 15px;
     box-sizing: border-box;
+    text-transform: uppercase;
 }
 .list-size{
     list-style: none;
     background-color: #fff;
-    text-transform: uppercase;
+    text-transform: capitalize;
     padding: 10px;
     li{
         padding-left: 10px;
@@ -330,6 +334,11 @@
         margin-top: 6px;
     }
     
+}
+.checkbox-text::before{
+    content: " ";
+    margin-left: 8px;
+
 }
 
 .size-detail[open] .list-size{
@@ -651,6 +660,7 @@
 }
 
 .promo-menu {
+    display: flex;
     font-family: Lato;
     font-weight: 300;
     font-size: 14px;
@@ -703,19 +713,22 @@
 .product-catalog {
     display: flex;
     justify-content: left;
-    align-items: center;
+    align-items: flex-start;
     flex-wrap: wrap;
     row-gap: 48px;
     margin-top: 65px;
 }
 
 .product-btn {
-    margin-right: 48px;
+    margin-right: 80px;
     background: none;
     border: none;
     font-size: 14px;
     line-height: 17px;
     color: #6F6E6E;
+}
+.product-btn-size{
+    margin-right: 0;
 }
 
 .product-menu-down {
@@ -815,7 +828,9 @@
         position: absolute;
         color: #656565;
         margin-left: 24px;
-        padding: 0px 15px;
+        padding: 0px 0px 0px 15px;
+        width: 60px;
+        
     }
 }
 
@@ -830,11 +845,11 @@
     padding: 16px 40px;
     transition: 0.4s;
 }
-.btn-my-product:hover{
+/*.btn-my-product-hover:hover{
     background-color: #fff;
     color: $color-pink;
     outline:1px solid $color-pink;
-}
+}*/
 
 .form-list {
     @include flexcolumn;
@@ -966,6 +981,9 @@
         background-color:$color-pink;
         border: none;
         height: 3px;
+    }
+    .hr-641{
+        width:641px;
     }
     .for-client-h2{
         margin-bottom: 12px;
