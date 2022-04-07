@@ -91,3 +91,48 @@
     font-size: 24px;
     line-height: 28px;
 }
+
+
+@media screen and (max-width:768px) {
+    .promo-container{
+        background-size:60%;
+        background-position-x:2px;
+        min-height: 368px;
+    
+    }
+    .promo-title{
+        font-size: 44px;
+        line-height: 53px;
+    }
+    .scale-up-hor-left{
+        animation: none;
+    }
+    .min__text{
+        font-weight: 400;
+        font-size: 28px;
+    }
+}
+@media screen and(max-width:375px) {
+    .promo-container {
+        background: none;
+        @include fljustifycenter;
+        flex-direction: column;
+        min-height: 375px;
+    }
+    
+    .promo-title {
+        font-size: 18px;
+        line-height: 20px;
+    width: 236px;
+    }
+    
+    .scale-up-hor-left {
+        animation: none;
+    }
+    
+    .min__text {
+        font-weight: 400;
+            font-size: 13px;
+        line-height: 20px;
+    }
+}
