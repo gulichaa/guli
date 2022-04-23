@@ -363,9 +363,19 @@
     background-size: cover;
 
 }
+.product{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+
+}
 
 .product-container {
-    @include fljustifybetween;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .product-title {
@@ -1070,10 +1080,90 @@
     }
 }
 
+
+
+@media screen and (max-width:1024px) {
+    .container {
+        width: auto;
+        margin: 0 10px;
+    }
+
+    .women {
+        width:320px;
+    }
+
+    .man {
+        width:320px;
+    }
+
+    .kids {
+        width:320px;
+    }
+    .proprties {
+        width: 320px;
+    }
+    .container-subscribe{
+        justify-content: space-evenly;
+    }
+    .footer-container {
+        margin: 0 10px;
+    }
+     
+    /* page catalog */
+
+    .product-catalog {
+        justify-content: space-around;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    
+    }
+    
+    .product-item:nth-child(9) {
+        display: none;
+    
+    }
+    
+    .product-item-none {
+        display: none;
+    }
+    .product-title-catalog{
+        justify-content: space-around;
+    }
+    .product-container {
+        gap: 6px;
+    
+        .product-item {
+            margin-bottom: 17px;
+        }
+    }
+
+    /* page */
+    .shop-home-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .quote{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .card{
+        margin-top: 0;
+    }
+    /* page product */
+    .subscribe-pg-cart {
+        margin-top: 100px;
+    }
+    .for-client{
+        margin-bottom: 100px;
+    }
+}
 /* tablet 768_index */
 
 @media screen and (max-width:768px) {
-    .container{
+    .co
+    ntainer{
         width: auto;
         margin:0px 10px;
     }
@@ -1132,6 +1222,9 @@
         height:693px;
         gap: 48px;
     }
+    .footer-container{
+        margin: 0 10px;
+    }
 
     /*page catalog */
     .product-catalog {
@@ -1171,7 +1264,7 @@
     }
 }
 
-@media screen and (max-width:375px) {
+@media screen and (max-width:376px) {
     .container {
         margin: 0px 2px;
     }

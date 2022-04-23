@@ -275,11 +275,24 @@
   line-height: 28px;
 }
 
+@media screen and (max-width: 1024px) {
+  .scale-up-hor-left {
+    -webkit-animation: none;
+            animation: none;
+  }
+  .promo__page__product {
+    margin-bottom: 0;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .promo-container {
     background-size: 60%;
     background-position-x: 2px;
     min-height: 368px;
+  }
+  .promo__page__product {
+    margin-bottom: 0;
   }
   .promo-title {
     font-size: 44px;
@@ -295,7 +308,10 @@
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 376px) {
+  .container {
+    margin: 0 2px;
+  }
   .promo-container {
     background: none;
     display: -webkit-box;
@@ -552,18 +568,34 @@
   background-size: cover;
 }
 
+.product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .product-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .product-title {
@@ -1443,9 +1475,98 @@
   margin-left: 22px;
 }
 
+@media screen and (max-width: 1024px) {
+  .container {
+    width: auto;
+    margin: 0 10px;
+  }
+  .women {
+    width: 320px;
+  }
+  .man {
+    width: 320px;
+  }
+  .kids {
+    width: 320px;
+  }
+  .proprties {
+    width: 320px;
+  }
+  .container-subscribe {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .footer-container {
+    margin: 0 10px;
+  }
+  /* page catalog */
+  .product-catalog {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .product-item:nth-child(9) {
+    display: none;
+  }
+  .product-item-none {
+    display: none;
+  }
+  .product-title-catalog {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .product-container {
+    gap: 6px;
+  }
+  .product-container .product-item {
+    margin-bottom: 17px;
+  }
+  /* page */
+  .shop-home-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .quote {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .card {
+    margin-top: 0;
+  }
+  /* page product */
+  .subscribe-pg-cart {
+    margin-top: 100px;
+  }
+  .for-client {
+    margin-bottom: 100px;
+  }
+}
+
 /* tablet 768_index */
 @media screen and (max-width: 768px) {
-  .container {
+  .co
+ntainer {
     width: auto;
     margin: 0px 10px;
   }
@@ -1521,6 +1642,9 @@
     height: 693px;
     gap: 48px;
   }
+  .footer-container {
+    margin: 0 10px;
+  }
   /*page catalog */
   .product-catalog {
     -ms-flex-pack: distribute;
@@ -1574,7 +1698,7 @@
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 376px) {
   .container {
     margin: 0px 2px;
   }

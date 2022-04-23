@@ -92,6 +92,15 @@
     line-height: 28px;
 }
 
+@media screen and (max-width:1024px) {
+    .scale-up-hor-left{
+        animation: none;
+    }
+    .promo__page__product {
+        margin-bottom: 0;
+    }
+}
+
 
 @media screen and (max-width:768px) {
     .promo-container{
@@ -99,6 +108,9 @@
         background-position-x:2px;
         min-height: 368px;
     
+    }
+    .promo__page__product {
+        margin-bottom: 0;
     }
     .promo-title{
         font-size: 44px;
@@ -112,7 +124,10 @@
         font-size: 28px;
     }
 }
-@media screen and(max-width:375px) {
+@media screen and(max-width:376px) {
+    .container{
+        margin: 0 2px;
+    }
     .promo-container {
         background: none;
         @include fljustifycenter;
